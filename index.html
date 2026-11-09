@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omer Parvez</title>
+<meta name="description" content="Omer Parvez: machine learning, Python back ends and developer tooling.">
+<style>
+  :root {
+    --bg: #fafaf7; --fg: #1c1c1c; --muted: #5d5d5d; --card: #fff;
+    --line: #e4e2dc; --accent: #2a78d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111214; --fg: #ececec; --muted: #a3a3a3; --card: #1a1b1e; --line: #2c2d31; --accent: #6aa8f0; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 52rem; margin: 0 auto; padding: 4rem 1.5rem; }
+  h1 { font-size: 2.6rem; line-height: 1.1; margin: 0 0 .5rem; letter-spacing: -.02em; }
+  h2 { font-size: .85rem; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); margin: 3.5rem 0 1rem; }
+  h3 { margin: 0 0 .35rem; font-size: 1.15rem; }
+  p { margin: 0 0 .75rem; }
+  .lead { font-size: 1.2rem; color: var(--muted); max-width: 38rem; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .projects { display: grid; gap: 1rem; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 1.25rem 1.4rem; }
+  .card p { color: var(--muted); }
+  .links a { margin-right: 1rem; font-weight: 600; }
+  .tags, .skills ul { display: flex; flex-wrap: wrap; gap: .4rem; padding: 0; margin: .5rem 0 0; list-style: none; }
+  .tags li, .skills li { font-size: .8rem; border: 1px solid var(--line); border-radius: 999px; padding: .1rem .65rem; }
+  .skills { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
+  .skills h3 { font-size: .95rem; }
+  footer { margin-top: 4rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Omer Parvez</h1>
+    <p class="lead">Developer working across machine learning, Python back ends and developer tooling. I like building small, dependency-free tools that make complex systems easy to see.</p>
+    <p class="links"><a href="https://github.com/omer-parvez">GitHub</a></p>
+  </header>
+
+  <section aria-labelledby="projects">
+    <h2 id="projects">Projects</h2>
+    <div class="projects">
+      <article class="card">
+        <h3>🛰️ Agent Monitor for Claude Code</h3>
+        <p>See what your Claude Code agents are doing: every session, prompt, subagent and swarm on a live map and timeline, with start/finish times and token counts. Replay, search, export. Local only, zero dependencies.</p>
+        <p class="links">
+          <a href="https://omer-parvez.github.io/claude-agent-monitor/">Live demo</a>
+          <a href="https://github.com/omer-parvez/claude-agent-monitor">Source</a>
+        </p>
+        <ul class="tags"><li>JavaScript</li><li>Node.js</li><li>HTML/CSS</li><li>Claude Code plugin</li></ul>
+      </article>
+
+      <article class="card">
+        <h3>🧬 Conditional data generation for prostate cancer diagnosis</h3>
+        <p>Master's thesis: generative adversarial networks (GANs) for conditional data generation to improve diagnosis in prostate cancer.</p>
+        <p class="links"><a href="https://github.com/omer-parvez/GAN">Source</a></p>
+        <ul class="tags"><li>Python</li><li>Deep learning</li><li>GANs</li><li>Jupyter</li></ul>
+      </article>
+
+      <article class="card">
+        <h3>📝 Web apps with Flask and Django</h3>
+        <p>A Flask blog with Jinja2 templates, and my first Django application.</p>
+        <p class="links">
+          <a href="https://github.com/omer-parvez/flask-blog">flask-blog</a>
+          <a href="https://github.com/omer-parvez/my-first-blog">my-first-blog</a>
+        </p>
+        <ul class="tags"><li>Python</li><li>Flask</li><li>Django</li><li>Jinja2</li></ul>
+      </article>
+
+      <article class="card">
+        <h3>📚 Documentation site</h3>
+        <p>A documentation site built with Mintlify and MDX.</p>
+        <p class="links"><a href="https://github.com/omer-parvez/docs">Source</a></p>
+        <ul class="tags"><li>MDX</li><li>Mintlify</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="skills">
+    <h2 id="skills">Skills</h2>
+    <div class="skills">
+      <div><h3>Languages</h3><ul><li>Python</li><li>JavaScript</li><li>C++</li><li>HTML/CSS</li><li>Shell</li><li>LaTeX</li></ul></div>
+      <div><h3>Machine learning and data</h3><ul><li>PyTorch</li><li>TensorFlow</li><li>Keras</li><li>scikit-learn</li><li>NumPy</li><li>Pandas</li><li>SciPy</li><li>Plotly</li></ul></div>
+      <div><h3>Web and apps</h3><ul><li>Django</li><li>Flask</li><li>Node.js</li><li>React</li><li>Electron</li><li>Qt</li></ul></div>
+      <div><h3>Databases</h3><ul><li>MongoDB</li><li>MySQL</li><li>SQL Server</li></ul></div>
+      <div><h3>Cloud, DevOps and hardware</h3><ul><li>Azure</li><li>Google Cloud</li><li>Docker</li><li>Linux</li><li>Arduino</li></ul></div>
+    </div>
+  </section>
+
+  <footer>© Omer Parvez</footer>
+</main>
+</body>
+</html>

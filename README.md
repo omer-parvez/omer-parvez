@@ -295,14 +295,14 @@ A documentation site built with Mintlify and MDX.
 <img height="175" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=omer-parvez&layout=compact&langs_count=6&hide_border=true&border_radius=14&bg_color=135%2C0b1d3a%2C1a0b2e&title_color=40e0d0&text_color=e6e6ff">
 
 <!-- Drawn daily by .github/workflows/snake.yml and pushed to the "output" branch -->
-<img width="100%" alt="3D view of my GitHub contributions" src="https://raw.githubusercontent.com/omer-parvez/omer-parvez/output/profile-night-rainbow.svg">
+<img width="100%" alt="3D view of my GitHub contributions" src="https://raw.githubusercontent.com/omer-parvez/omer-parvez/refs/heads/output/profile-night-rainbow.svg">
 
 <img width="100%" alt="Contribution activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=omer-parvez&bg_color=12122b&color=e6e6ff&title_color=ff4ecd&line=40e0d0&point=ff4ecd&area=true&area_color=8a2be2&hide_border=true&radius=14&custom_title=Contribution%20activity">
 
 <!-- Drawn daily by .github/workflows/snake.yml and pushed to the "output" branch -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/omer-parvez/omer-parvez/output/github-snake-dark.svg">
-  <img width="100%" alt="A snake eating my GitHub contribution graph" src="https://raw.githubusercontent.com/omer-parvez/omer-parvez/output/github-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/omer-parvez/omer-parvez/refs/heads/output/github-snake-dark.svg">
+  <img width="100%" alt="A snake eating my GitHub contribution graph" src="https://raw.githubusercontent.com/omer-parvez/omer-parvez/refs/heads/output/github-snake.svg">
 </picture>
 
 </div>

@@ -1,6 +1,6 @@
-name: Contribution snake
+name: Contribution snake and 3D graph
 
-# Draws the contribution snake and pushes the SVGs to the "output" branch, which README.md shows.
+# Draws the contribution snake and the 3D contribution graph, and pushes the SVGs to the "output" branch, which README.md shows.
 on:
   schedule:
     - cron: "0 0 * * *" # daily, so new contributions appear
@@ -23,6 +23,14 @@ jobs:
           outputs: |
             dist/github-snake.svg?color_snake=#8a2be2&color_dots=#ebedf0,#40e0d0,#4169e1,#ff8c00,#ff0080
             dist/github-snake-dark.svg?palette=github-dark&color_snake=#ff4ecd&color_dots=#161b22,#40e0d0,#4169e1,#ff8c00,#ff0080
+
+      # Writes several themes to ./profile-3d-contrib; the README uses the rainbow one.
+      - uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - run: cp profile-3d-contrib/profile-night-rainbow.svg dist/
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:

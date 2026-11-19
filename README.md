@@ -294,7 +294,8 @@ A documentation site built with Mintlify and MDX.
 <img height="175" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=omer-parvez&count_private=true&show_icons=true&hide_border=true&border_radius=14&bg_color=135%2C1a0b2e%2C0b1d3a&title_color=ff4ecd&icon_color=40e0d0&text_color=e6e6ff&ring_color=ff8c00">
 <img height="175" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=omer-parvez&layout=compact&langs_count=6&hide_border=true&border_radius=14&bg_color=135%2C0b1d3a%2C1a0b2e&title_color=40e0d0&text_color=e6e6ff">
 
-<img alt="GitHub streak" src="https://streak-stats.demolab.com/?user=omer-parvez&hide_border=true&border_radius=14&background=135%2C1a0b2e%2C0b1d3a&ring=ff4ecd&fire=ff8c00&currStreakLabel=40e0d0&sideLabels=e6e6ff&currStreakNum=ffffff&sideNums=ffffff&dates=a0a0d0&stroke=4169e1">
+<!-- Drawn daily by .github/workflows/snake.yml and pushed to the "output" branch -->
+<img width="100%" alt="3D view of my GitHub contributions" src="https://raw.githubusercontent.com/omer-parvez/omer-parvez/output/profile-night-rainbow.svg">
 
 <img width="100%" alt="Contribution activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=omer-parvez&bg_color=12122b&color=e6e6ff&title_color=ff4ecd&line=40e0d0&point=ff4ecd&area=true&area_color=8a2be2&hide_border=true&radius=14&custom_title=Contribution%20activity">
 

@@ -30,11 +30,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
-      - run: cp profile-3d-contrib/profile-night-rainbow.svg dist/
+      # snk runs in Docker, so dist/ is owned by root and not writable here; collect everything in site/.
+      - run: |
+          mkdir site
+          cp dist/*.svg profile-3d-contrib/profile-night-rainbow.svg site/
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
-          build_dir: dist
+          build_dir: site
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

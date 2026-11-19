@@ -1,8 +1,5 @@
-<!-- Header banner: switches with the GitHub light/dark theme, same colours as the portfolio page -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&section=header&height=230&color=0:6aa8f0,100:f5a25b&text=Omer%20Parvez&fontColor=0f1729&fontSize=68&fontAlignY=38&desc=Machine%20learning%20%C2%B7%20Python%20back%20ends%20%C2%B7%20Developer%20tooling&descSize=18&descAlignY=60">
-  <img width="100%" alt="Omer Parvez: machine learning, Python back ends and developer tooling" src="https://capsule-render.vercel.app/api?type=waving&section=header&height=230&color=0:2a78d6,100:e9832b&text=Omer%20Parvez&fontColor=ffffff&fontSize=68&fontAlignY=38&desc=Machine%20learning%20%C2%B7%20Python%20back%20ends%20%C2%B7%20Developer%20tooling&descSize=18&descAlignY=60">
-</picture>
+<!-- RGB header banner. Commas in URLs are written as %2C: inside <picture> srcset a raw comma cuts the URL. -->
+<img width="100%" alt="Omer Parvez: machine learning, Python back ends and developer tooling" src="https://capsule-render.vercel.app/api?type=waving&section=header&height=240&color=0:ff0080%2C25:ff8c00%2C50:40e0d0%2C75:4169e1%2C100:8a2be2&text=Omer%20Parvez&fontColor=ffffff&fontSize=70&fontAlignY=36&animation=twinkling&desc=Machine%20learning%20%C2%B7%20Python%20back%20ends%20%C2%B7%20Developer%20tooling&descSize=18&descAlignY=58">
 
 <div align="center">
 
@@ -293,19 +290,13 @@ A documentation site built with Mintlify and MDX.
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=omer-parvez&count_private=true&show_icons=true&hide_border=true&bg_color=0f1729&title_color=6aa8f0&icon_color=f5a25b&text_color=e7ecf6">
-  <img height="170" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=omer-parvez&count_private=true&show_icons=true&hide_border=true&bg_color=edf0f5&title_color=2a78d6&icon_color=e9832b&text_color=15203a">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=omer-parvez&layout=compact&hide_border=true&bg_color=0f1729&title_color=6aa8f0&text_color=e7ecf6">
-  <img height="170" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=omer-parvez&layout=compact&hide_border=true&bg_color=edf0f5&title_color=2a78d6&text_color=15203a">
-</picture>
+<!-- Neon cards on a diagonal gradient (bg_color=angle,colour,colour); they read well on both GitHub themes -->
+<img height="175" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=omer-parvez&count_private=true&show_icons=true&hide_border=true&border_radius=14&bg_color=135%2C1a0b2e%2C0b1d3a&title_color=ff4ecd&icon_color=40e0d0&text_color=e6e6ff&ring_color=ff8c00">
+<img height="175" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=omer-parvez&layout=compact&langs_count=6&hide_border=true&border_radius=14&bg_color=135%2C0b1d3a%2C1a0b2e&title_color=40e0d0&text_color=e6e6ff">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=omer-parvez&hide_border=true&background=0f1729&ring=f5a25b&fire=f5a25b&currStreakLabel=6aa8f0&sideLabels=e7ecf6&currStreakNum=e7ecf6&sideNums=e7ecf6&dates=9aa6bf&stroke=2a3756">
-  <img alt="GitHub streak" src="https://streak-stats.demolab.com/?user=omer-parvez&hide_border=true&background=edf0f5&ring=e9832b&fire=e9832b&currStreakLabel=2a78d6&sideLabels=15203a&currStreakNum=15203a&sideNums=15203a&dates=56617a&stroke=d6dce7">
-</picture>
+<img alt="GitHub streak" src="https://streak-stats.demolab.com/?user=omer-parvez&hide_border=true&border_radius=14&background=135%2C1a0b2e%2C0b1d3a&ring=ff4ecd&fire=ff8c00&currStreakLabel=40e0d0&sideLabels=e6e6ff&currStreakNum=ffffff&sideNums=ffffff&dates=a0a0d0&stroke=4169e1">
+
+<img width="100%" alt="Contribution activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=omer-parvez&bg_color=12122b&color=e6e6ff&title_color=ff4ecd&line=40e0d0&point=ff4ecd&area=true&area_color=8a2be2&hide_border=true&radius=14&custom_title=Contribution%20activity">
 
 </div>
 
@@ -315,7 +306,4 @@ A documentation site built with Mintlify and MDX.
 <sub>© Omer Parvez. Code on <a href="https://github.com/omer-parvez">github.com/omer-parvez</a></sub>
 </div>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&section=footer&height=120&color=0:6aa8f0,100:f5a25b">
-  <img width="100%" alt="" src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=120&color=0:2a78d6,100:e9832b">
-</picture>
+<img width="100%" alt="" src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=130&color=0:8a2be2%2C25:4169e1%2C50:40e0d0%2C75:ff8c00%2C100:ff0080">

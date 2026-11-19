@@ -298,6 +298,12 @@ A documentation site built with Mintlify and MDX.
 
 <img width="100%" alt="Contribution activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=omer-parvez&bg_color=12122b&color=e6e6ff&title_color=ff4ecd&line=40e0d0&point=ff4ecd&area=true&area_color=8a2be2&hide_border=true&radius=14&custom_title=Contribution%20activity">
 
+<!-- Drawn daily by .github/workflows/snake.yml and pushed to the "output" branch -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/omer-parvez/omer-parvez/output/github-snake-dark.svg">
+  <img width="100%" alt="A snake eating my GitHub contribution graph" src="https://raw.githubusercontent.com/omer-parvez/omer-parvez/output/github-snake.svg">
+</picture>
+
 </div>
 
 ---

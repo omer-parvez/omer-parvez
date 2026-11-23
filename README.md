@@ -8,14 +8,14 @@
   <img alt="I build tools that make complex systems easy to see, from GAN experiments to live maps of AI agents." src="https://readme-typing-svg.demolab.com?font=IBM+Plex+Mono&weight=500&size=19&pause=1400&color=2A78D6&center=true&vCenter=true&width=700&lines=I+build+tools+that+make+complex+systems+easy+to+see;From+GAN+experiments+to+live+maps+of+AI+agents">
 </picture>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-omer--parvez.github.io-2a78d6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://omer-parvez.github.io/omer-parvez/)
-[![Live demo](https://img.shields.io/badge/Agent%20Monitor-Live%20demo-e9832b?style=for-the-badge&logo=claude&logoColor=white)](https://omer-parvez.github.io/claude-agent-monitor/)
-[![GitHub](https://img.shields.io/badge/GitHub-omer--parvez-15203a?style=for-the-badge&logo=github&logoColor=white)](https://github.com/omer-parvez)
+[![Portfolio](https://img.shields.io/badge/Portfolio-2a78d6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://omer-parvez.github.io/omer-parvez/)
+[![Agent Monitor live demo](https://img.shields.io/badge/Agent%20Monitor%20live%20demo-e9832b?style=for-the-badge&logo=claude&logoColor=white)](https://omer-parvez.github.io/claude-agent-monitor/)
+[![GitHub](https://img.shields.io/badge/GitHub-15203a?style=for-the-badge&logo=github&logoColor=white)](https://github.com/omer-parvez)
 
 </div>
 
 > [!TIP]
-> My [portfolio](https://omer-parvez.github.io/omer-parvez/) has a live map: move through it and click an orange node to open that project. Here is the same map:
+> My portfolio has a live map: move through it and click an orange node to open that project. Here is the same map:
 
 ```mermaid
 graph LR
@@ -59,7 +59,7 @@ See what your Claude Code agents are doing: every session, prompt, subagent and 
 
 Replay, search and export. Everything stays on your computer, with zero dependencies.
 
-[**▶ Try the live demo**](https://omer-parvez.github.io/claude-agent-monitor/) · [Source](https://github.com/omer-parvez/claude-agent-monitor)
+[Source](https://github.com/omer-parvez/claude-agent-monitor)
 
 `JavaScript` `Node.js` `HTML/CSS` `Claude Code plugin`
 
@@ -310,7 +310,7 @@ A documentation site built with Mintlify and MDX.
 ---
 
 <div align="center">
-<sub>© Omer Parvez. Code on <a href="https://github.com/omer-parvez">github.com/omer-parvez</a></sub>
+<sub>© Omer Parvez</sub>
 </div>
 
 <img width="100%" alt="" src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=130&color=0:8a2be2%2C25:4169e1%2C50:40e0d0%2C75:ff8c00%2C100:ff0080">

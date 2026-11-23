@@ -231,7 +231,7 @@
           <a class="btn primary" href="#projects">See my projects</a>
           <a class="btn" href="https://github.com/omer-parvez">GitHub profile</a>
         </div>
-        <p class="hint"><span class="dot" aria-hidden="true"></span>Move through the map. Click an orange node to open that project.</p>
+        <p class="hint"><span class="dot" aria-hidden="true"></span>Move through the map. Click an orange button to open that project.</p>
       </div>
     </div>
   </div>
@@ -643,7 +643,8 @@ function step(t) {
     const hx = n.ox + Math.sin(t / 1400 + n.phase) * 6, hy = n.oy + Math.cos(t / 1700 + n.phase) * 6;
     n.vx += (hx - n.x) * 0.02; n.vy += (hy - n.y) * 0.02;
     const dx = n.x - pointer.x, dy = n.y - pointer.y, d2 = dx * dx + dy * dy;
-    if (d2 < 120 * 120 && d2 > 1) { const f = (1 - Math.sqrt(d2) / 120) * 2.2; const d = Math.sqrt(d2); n.vx += dx / d * f; n.vy += dy / d * f; }
+    // project buttons stay put so they can be clicked
+    if (n.kind !== 'project' && d2 < 120 * 120 && d2 > 1) { const f = (1 - Math.sqrt(d2) / 120) * 2.2; const d = Math.sqrt(d2); n.vx += dx / d * f; n.vy += dy / d * f; }
     n.vx *= 0.86; n.vy *= 0.86; n.x += n.vx; n.y += n.vy;
   });
 }
@@ -665,6 +666,20 @@ function draw(p) {
     const k = Math.min(1, Math.max(0, p * 1.6 - i * 0.03));
     if (!k) return;
     const isHover = n === hover;
+    if (n.kind === 'project') {
+      // Projects are orange pill buttons with the label inside, so the whole pill is a click target.
+      ctx.font = '600 13px "IBM Plex Sans", sans-serif';
+      n.w = ctx.measureText(n.label).width + 28; n.h = 30;
+      const s = k * (isHover ? 1.08 : 1), w = n.w * s, h = n.h * s;
+      ctx.globalAlpha = k;
+      ctx.fillStyle = colors.orange;
+      ctx.beginPath(); ctx.roundRect(n.x - w / 2, n.y - h / 2, w, h, h / 2); ctx.fill();
+      ctx.strokeStyle = isHover ? colors.ink : colors.fog; ctx.lineWidth = 2; ctx.stroke();
+      ctx.fillStyle = '#15203a'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+      ctx.fillText(n.label, n.x, n.y + 1);
+      ctx.textAlign = 'start'; ctx.textBaseline = 'alphabetic'; ctx.globalAlpha = 1;
+      return;
+    }
     ctx.fillStyle = n.kind === 'me' ? colors.blue : n.kind === 'project' ? colors.orange : colors.muted;
     ctx.beginPath(); ctx.arc(n.x, n.y, n.r * k * (isHover ? 1.35 : 1), 0, Math.PI * 2); ctx.fill();
     if (n.kind !== 'skill') { ctx.strokeStyle = colors.fog; ctx.lineWidth = 3; ctx.stroke(); }
@@ -686,8 +701,11 @@ function frame(t) {
 }
 
 function nodeAt(x, y) {
+  // a project button wins anywhere inside its pill (plus a little slack)
+  const btn = nodes.find(n => n.w && Math.abs(x - n.x) <= n.w / 2 + 4 && Math.abs(y - n.y) <= n.h / 2 + 4);
+  if (btn) return btn;
   let best = null, bd = 18 * 18;
-  nodes.forEach(n => { const d = (n.x - x) ** 2 + (n.y - y) ** 2; if (d < bd) { bd = d; best = n; } });
+  nodes.forEach(n => { if (n.kind === 'project') return; const d = (n.x - x) ** 2 + (n.y - y) ** 2; if (d < bd) { bd = d; best = n; } });
   return best;
 }
 canvas.addEventListener('pointermove', e => {
@@ -699,8 +717,11 @@ canvas.addEventListener('pointermove', e => {
   if (reduceMotion) draw(1);
 });
 canvas.addEventListener('pointerleave', () => { pointer = { x: -1e4, y: -1e4 }; hover = null; if (reduceMotion) draw(1); });
-canvas.addEventListener('click', () => {
-  if (hover && hover.target) document.getElementById(hover.target).scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
+canvas.addEventListener('click', e => {
+  // hit-test the click itself: a tap on a touch screen sends no pointermove first
+  const r = canvas.getBoundingClientRect();
+  const n = nodeAt(e.clientX - r.left, e.clientY - r.top);
+  if (n && n.target) document.getElementById(n.target).scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
 });
 addEventListener('resize', () => { layout(); if (reduceMotion) draw(1); });
 

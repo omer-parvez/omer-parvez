@@ -15,7 +15,7 @@
 </div>
 
 > [!TIP]
-> My portfolio has a live map: move through it and click an orange node to open that project. Here is the same map:
+> My portfolio has a live map: move through it and click an orange button to open that project. Here is the same map:
 
 ```mermaid
 graph LR

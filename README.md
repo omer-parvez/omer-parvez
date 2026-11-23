@@ -1,5 +1,5 @@
-<!-- RGB header banner. Commas in URLs are written as %2C: inside <picture> srcset a raw comma cuts the URL. -->
-<img width="100%" alt="Omer Parvez: machine learning, Python back ends and developer tooling" src="https://capsule-render.vercel.app/api?type=waving&section=header&height=240&color=0:ff0080%2C25:ff8c00%2C50:40e0d0%2C75:4169e1%2C100:8a2be2&text=Omer%20Parvez&fontColor=ffffff&fontSize=70&fontAlignY=36&animation=twinkling&desc=Machine%20learning%20%C2%B7%20Python%20back%20ends%20%C2%B7%20Developer%20tooling&descSize=18&descAlignY=58">
+<!-- Header banner in the portfolio colours. Commas in URLs are written as %2C: inside <picture> srcset a raw comma cuts the URL. -->
+<img width="100%" alt="Omer Parvez: machine learning, Python back ends and developer tooling" src="https://capsule-render.vercel.app/api?type=waving&section=header&height=200&color=0:0f1729%2C100:2a78d6&text=Omer%20Parvez&fontColor=ffffff&fontSize=56&fontAlignY=36&desc=Machine%20learning%20%C2%B7%20Python%20back%20ends%20%C2%B7%20Developer%20tooling&descSize=16&descAlignY=56">
 
 <div align="center">
 
@@ -313,4 +313,4 @@ A documentation site built with Mintlify and MDX.
 <sub>© Omer Parvez</sub>
 </div>
 
-<img width="100%" alt="" src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=130&color=0:8a2be2%2C25:4169e1%2C50:40e0d0%2C75:ff8c00%2C100:ff0080">
+<img width="100%" alt="" src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=100&color=0:2a78d6%2C100:0f1729">
